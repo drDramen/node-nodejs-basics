@@ -1,7 +1,7 @@
-import path from 'path';
-import { release, version } from 'os';
+import path from 'node:path';
+import { release, version } from 'node:os';
 import { createRequire } from 'node:module';
-import { createServer as createServerHttp } from 'http';
+import { createServer as createServerHttp } from 'node:http';
 import { getFileDirName } from '../helpers/index.js';
 import './files/c.cjs';
 

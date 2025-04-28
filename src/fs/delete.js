@@ -1,5 +1,5 @@
-import { join } from 'path';
-import { rm } from 'fs/promises';
+import { join } from 'node:path';
+import { rm } from 'node:fs/promises';
 import { FsException, getFileDirName, targetExists } from '../helpers/index.js';
 
 const { __dirname } = getFileDirName(import.meta);

@@ -1,5 +1,5 @@
-import { join } from 'path';
-import { createWriteStream } from 'fs';
+import { join } from 'node:path';
+import { createWriteStream } from 'node:fs';
 import { stdin, stdout } from 'node:process'
 import { pipeline } from 'node:stream/promises';
 import { getFileDirName } from '../helpers/index.js';

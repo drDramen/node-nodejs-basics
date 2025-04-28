@@ -1,4 +1,4 @@
-import { Transform } from 'stream';
+import { Transform } from 'node:stream';
 import { stdin, stdout } from 'node:process'
 import { pipeline } from 'node:stream/promises';
 import { getReverseString } from '../helpers/index.js';

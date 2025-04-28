@@ -1,5 +1,5 @@
-import { join } from 'path';
-import { rename as fsRename } from 'fs/promises';
+import { join } from 'node:path';
+import { rename as fsRename } from 'node:fs/promises';
 import { FsException, getFileDirName, targetExists } from '../helpers/index.js';
 
 const { __dirname } = getFileDirName(import.meta);

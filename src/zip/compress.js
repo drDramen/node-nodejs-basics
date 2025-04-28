@@ -1,4 +1,4 @@
-import { join } from 'path';
+import { join } from 'node:path';
 import { createReadStream, createWriteStream } from 'node:fs';
 import { pipeline } from 'node:stream/promises';
 import { createGzip } from 'node:zlib';

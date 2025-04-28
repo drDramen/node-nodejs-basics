@@ -1,5 +1,5 @@
 import { stdout } from 'node:process';
-import { join } from 'path';
+import { join } from 'node:path';
 import { createReadStream } from 'node:fs';
 import { pipeline } from 'node:stream/promises';
 import { getFileDirName } from '../helpers/index.js';
