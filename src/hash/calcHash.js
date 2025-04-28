@@ -13,9 +13,13 @@ const SOURCE_FILE_PATH = join(SOURCE_FOLDER_PATH, SOURCE_FILE);
 
 const calculateHash = async () => {
     const hash = createHash('sha256');
-
     const input = createReadStream(SOURCE_FILE_PATH);
-    input.pipe(hash).setEncoding('hex').pipe(stdout);
+
+    input.on('data', (chunk) => {
+        hash.update(chunk);
+    });
+
+    input.on('end', () => console.log(hash.digest('hex')))
 };
 
 await calculateHash();
